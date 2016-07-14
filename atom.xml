@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[南無阿弥陀]]></title>
-  <link href="http://vansutuyduyen.github.io/atom.xml" rel="self"/>
-  <link href="http://vansutuyduyen.github.io/"/>
-  <updated>2016-07-14T13:49:50+09:00</updated>
-  <id>http://vansutuyduyen.github.io/</id>
+  <link href="http://dankuanmei.xyz/atom.xml" rel="self"/>
+  <link href="http://dankuanmei.xyz/"/>
+  <updated>2016-07-14T19:25:56+09:00</updated>
+  <id>http://dankuanmei.xyz/</id>
   <author>
     <name><![CDATA[Đặng Quang Minh]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Hello Summer!]]></title>
-    <link href="http://vansutuyduyen.github.io/blog/2016/07/14/hello-summer/"/>
+    <link href="http://dankuanmei.xyz/blog/2016/07/14/hello-summer/"/>
     <updated>2016-07-14T13:41:34+09:00</updated>
-    <id>http://vansutuyduyen.github.io/blog/2016/07/14/hello-summer</id>
+    <id>http://dankuanmei.xyz/blog/2016/07/14/hello-summer</id>
     <content type="html"><![CDATA[<h3>Introduce</h3>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
