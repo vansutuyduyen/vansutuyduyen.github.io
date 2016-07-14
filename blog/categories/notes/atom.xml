@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: notes | 南無阿弥陀]]></title>
+  <link href="http://dankuanmei.xyz/blog/categories/notes/atom.xml" rel="self"/>
+  <link href="http://dankuanmei.xyz/"/>
+  <updated>2016-07-14T15:45:13+00:00</updated>
+  <id>http://dankuanmei.xyz/</id>
+  <author>
+    <name><![CDATA[Đặng Quang Minh]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Centos Notes]]></title>
+    <link href="http://dankuanmei.xyz/blog/2016/07/14/centos-notes/"/>
+    <updated>2016-07-14T15:42:25+00:00</updated>
+    <id>http://dankuanmei.xyz/blog/2016/07/14/centos-notes</id>
+    <content type="html"><![CDATA[<h3>Adding, Enabling, and Disabling a Yum Repository</h3>
+
+<pre><code>yum-config-manager --add-repo repository_url
+yum-config-manager --enable repository…
+yum-config-manager --disable repository…
+</code></pre>
+
+<p>List repo for centos:
+* <a href="http://dl.fedoraproject.org/pub/epel/6/x86_64/">http://dl.fedoraproject.org/pub/epel/6/x86_64/</a>
+* <a href="http://dl.fedoraproject.org/pub/epel/">http://dl.fedoraproject.org/pub/epel/</a></p>
+
+<h3>Fix error no key</h3>
+
+<pre><code>wget http://ftp.riken.jp/Linux/fedora/epel/RPM-GPG-KEY-EPEL-6
+rpm -import RPM-GPG-KEY-EPEL-6
+rm -f RPM-GPG-KEY-EPEL-6
+
+rpm --import http://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-6
+</code></pre>
+
+<h3>You need to install and configure ntp.</h3>
+
+<pre><code>$ yum install ntp
+$ chkconfig ntpd on
+$ ntpdate pool.ntp.org
+$ service ntpd start
+</code></pre>
+
+<h3>Useful &ldquo;df&rdquo; Commands to Check Disk Space in Linux</h3>
+
+<pre><code>$ df -a
+
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/cciss/c0d0p2     78361192  23186116  51130312  32% /
+proc                         0         0         0   -  /proc
+sysfs                        0         0         0   -  /sys
+devpts                       0         0         0   -  /dev/pts
+/dev/cciss/c0d0p5     24797380  22273432   1243972  95% /home
+/dev/cciss/c0d0p3     29753588  25503792   2713984  91% /data
+/dev/cciss/c0d0p1       295561     21531    258770   8% /boot
+tmpfs                   257476         0    257476   0% /dev/shm
+none                         0         0         0   -  /proc/sys/fs/binfmt_misc
+sunrpc                       0         0         0   -  /var/lib/nfs/rpc_pipefs
+</code></pre>
+
+<h3>Download using wget or curl</h3>
+
+<pre><code>$ wget -O ...
+$ curl -O ...
+</code></pre>
+
+<h3>Copy file to clipboard</h3>
+
+<pre><code>$ xclip -sel clip &lt; ~/.ssh/id_rsa.pub
+</code></pre>
+
+<h3>Make simple server with python</h3>
+
+<pre><code>$ python -m SimpleHTTPServer 8080
+</code></pre>
+
+<h3>Install nodejs</h3>
+
+<p>Run as root on RHEL, CentOS or Fedora, for Node.js v4 LTS Argon:
+<code>
+$ curl --silent --location https://rpm.nodesource.com/setup_4.x | bash -
+</code></p>
+
+<p>Alternatively for Node.js v6:
+<code>
+$ curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
+</code></p>
+
+<p>Alternatively for Node.js 0.10:
+<code>
+$ curl --silent --location https://rpm.nodesource.com/setup | bash -
+</code></p>
+
+<p>Then install, as root:
+<code>
+$ yum -y install nodejs
+</code></p>
+
+<h3>Install development tools</h3>
+
+<pre><code>$ sudo yum groupinstall "Development Tools"
+</code></pre>
+
+<h3>Zip</h3>
+
+<p>Zip folder to file
+<code>
+$ zip -r file_name.zip /path/of/folder/
+</code></p>
+
+<h3>Auto start service</h3>
+
+<p>Add it to chkconfig
+<code>
+$ sudo /sbin/chkconfig --add mysqld
+</code></p>
+
+<p>Make sure it is in the chkconfig.
+<code>
+$ sudo /sbin/chkconfig --list mysqld
+</code></p>
+
+<p>Set it to autostart
+<code>
+$ sudo /sbin/chkconfig mysqld on
+</code></p>
+
+<p>To stop a service from auto starting on boot
+<code>
+$ sudo /sbin/chkconfig mysqld off
+</code></p>
+
+<h3>Find text in folder</h3>
+
+<pre><code>$ grep -rnw './' -e ""   
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>
