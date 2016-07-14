@@ -4,7 +4,7 @@
   <title><![CDATA[南無阿弥陀]]></title>
   <link href="http://dankuanmei.xyz/atom.xml" rel="self"/>
   <link href="http://dankuanmei.xyz/"/>
-  <updated>2016-07-14T15:45:13+00:00</updated>
+  <updated>2016-07-14T15:53:02+00:00</updated>
   <id>http://dankuanmei.xyz/</id>
   <author>
     <name><![CDATA[Đặng Quang Minh]]></name>
@@ -12,6 +12,128 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Debian Notes]]></title>
+    <link href="http://dankuanmei.xyz/blog/2016/07/14/debian-notes/"/>
+    <updated>2016-07-14T15:52:03+00:00</updated>
+    <id>http://dankuanmei.xyz/blog/2016/07/14/debian-notes</id>
+    <content type="html"><![CDATA[<h3>Install Erlang</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb
+</span><span class='line'>$ sudo dpkg -i erlang-solutions_1.0_all.deb
+</span><span class='line'>$ wget https://packages.erlang-solutions.com/ubuntu/erlang_solutions.asc
+</span><span class='line'>$ sudo apt-key add erlang_solutions.asc
+</span><span class='line'>$ sudo apt-get install elixir
+</span><span class='line'>$ sudo apt-get update
+</span><span class='line'>$ sudo apt-get install erlang</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Checking your Ubuntu Version</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ lsb_release -a</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Setup static ip address</h3>
+
+<p>Edit file <code>/etc/network/interfaces</code></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>auto lo
+</span><span class='line'>iface lo inet loopback
+</span><span class='line'>
+</span><span class='line'>auto eth0
+</span><span class='line'>iface eth0 inet static
+</span><span class='line'>dns-nameservers 8.8.8.8 8.8.4.4
+</span><span class='line'>address xx.xx.xx.xx
+</span><span class='line'>gateway xx.xx.xx.xx
+</span><span class='line'>netmask 255.255.255.0
+</span><span class='line'>network xx.xx.xx.xx
+</span><span class='line'>broadcast xx.xx.xx.xx</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Restart network</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo /etc/init.d/networking restart</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Update default editor</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo update-alternatives --config editor</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Shutdown and restart</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ shutdown -h now # shutdow
+</span><span class='line'>$ shutdown -r now # reboot
+</span><span class='line'>$ shutdown -c # cancel shutdown
+</span><span class='line'>$ shutdown -h 20:00 # shutdown at 20:00
+</span><span class='line'>$ shutdown -r 20:00 # reboot at 20:00</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Install apache2</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo apt-get install apache2</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Detail: <a href="https://help.ubuntu.com/lts/serverguide/httpd.html">https://help.ubuntu.com/lts/serverguide/httpd.html</a></p>
+
+<h3>Command-line Frontends</h3>
+
+<ul>
+<li><code>aptitude update</code> (or apt-get update, see apt-get) to update apt&rsquo;s internal database of available packages</li>
+<li><code>aptitude safe-upgrade</code> (or apt-get -u upgrade) to bring all currently installed packages up to date</li>
+<li><code>aptitude search jabber</code> (or apt-cache search jabber) to find a program that gives you access to the jabber instant-messaging system</li>
+<li><code>aptitude show gabber</code> (or apt-cache show gabber) to display more info about the GNOME jabber client</li>
+<li><code>aptitude install gabber</code> (or apt-get install gabber) to install the package</li>
+<li><code>aptitude remove gabber</code> (or apt-get remove gabber) to remove it again</li>
+<li><code>aptitude search '~i'</code> to show installed packages</li>
+</ul>
+
+
+<h3>Install Openssh</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo apt-get install openssh-server
+</span><span class='line'>$ sudo apt-get install openssh-client</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Config openssh in <code>/etc/ssh/</code></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># /etc/ssh/sshd_config
+</span><span class='line'>PermitRootLogin yes</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Centos Notes]]></title>
