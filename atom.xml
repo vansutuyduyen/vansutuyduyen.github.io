@@ -4,7 +4,7 @@
   <title><![CDATA[南無阿弥陀]]></title>
   <link href="http://dankuanmei.xyz/atom.xml" rel="self"/>
   <link href="http://dankuanmei.xyz/"/>
-  <updated>2016-07-14T15:53:02+00:00</updated>
+  <updated>2016-07-16T14:50:19+00:00</updated>
   <id>http://dankuanmei.xyz/</id>
   <author>
     <name><![CDATA[Đặng Quang Minh]]></name>
@@ -12,6 +12,97 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Free resources for design website]]></title>
+    <link href="http://dankuanmei.xyz/blog/2016/07/16/free-resources-for-design-website/"/>
+    <updated>2016-07-16T14:46:52+00:00</updated>
+    <id>http://dankuanmei.xyz/blog/2016/07/16/free-resources-for-design-website</id>
+    <content type="html"><![CDATA[<h2>SNS avatar generator</h2>
+
+<h3>uiFaces</h3>
+
+<p><a href="http://uifaces.com/">http://uifaces.com/</a></p>
+
+<p>Dùng trong trường hợp muốn tạo ra một loạt avatar dùng cho demo vân vân.</p>
+
+<p>Có tích hợp cả API, rất đáng để dùng thử.</p>
+
+<h2>Free Video</h2>
+
+<h3>mazwai</h3>
+
+<p><a href="http://mazwai.com/#index">http://mazwai.com/#index</a></p>
+
+<p>Toàn là video nhìn rất cool.</p>
+
+<h3>jQuery video background plugin</h3>
+
+<p><a href="https://github.com/VodkaBears/Vide">https://github.com/VodkaBears/Vide</a></p>
+
+<h2>Icon</h2>
+
+<h3>iconfinder</h3>
+
+<p><a href="https://www.iconfinder.com/">https://www.iconfinder.com/</a></p>
+
+<h2>Html template</h2>
+
+<h3>html5up</h3>
+
+<p><a href="http://html5up.net/">http://html5up.net/</a></p>
+
+<h3>startbootstrap</h3>
+
+<p><a href="http://startbootstrap.com/">http://startbootstrap.com/</a></p>
+
+<h3>blacktie</h3>
+
+<p><a href="http://www.blacktie.co/">http://www.blacktie.co/</a></p>
+
+<h2>Free logo</h2>
+
+<h3>Squarespace (Recommend)</h3>
+
+<p><a href="http://www.squarespace.com/logo#">http://www.squarespace.com/logo#</a></p>
+
+<h3>LOGASTER</h3>
+
+<p><a href="https://www.logaster.com/">https://www.logaster.com/</a></p>
+
+<h2>CSS animation</h2>
+
+<h3>Animate.css (Recommend)</h3>
+
+<p><a href="http://daneden.github.io/animate.css/">http://daneden.github.io/animate.css/</a></p>
+
+<h2>HTML Gen</h2>
+
+<h3>coveloping (Recommend)</h3>
+
+<p><a href="http://coveloping.com/">http://coveloping.com/</a></p>
+
+<p>Tập hợp rất nhiều công cụ dùng để sinh ra các phần trong trang HTML như price page vân vân.</p>
+
+<h3>TeamPage.io</h3>
+
+<p><a href="http://www.teampage.io/">http://www.teampage.io/</a></p>
+
+<p>Tạo team member page một cách rất đơn giản.</p>
+
+<h3>FRAME</h3>
+
+<p><a href="http://frame.lab25.co.uk/">http://frame.lab25.co.uk/</a></p>
+
+<p>Sinh ra 1 top page na ná như trang đó.</p>
+
+<h3>UICloud</h3>
+
+<p><a href="http://ui-cloud.com/">http://ui-cloud.com/</a></p>
+
+<p>Trang chuyên dùng cho việc search tham khảo những thành phần của UI.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Debian Notes]]></title>
