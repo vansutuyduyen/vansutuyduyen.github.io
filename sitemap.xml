@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://dankuanmei.xyz/blog/2016/07/14/hello-summer/</loc>
-<lastmod>2016-07-14T13:41:34+09:00</lastmod>
+<loc>http://dankuanmei.xyz/blog/2016/07/26/let-stydy-django/</loc>
+<lastmod>2016-07-26T13:38:03+09:00</lastmod>
 </url>
 <url>
 <loc>http://dankuanmei.xyz/blog/archives/</loc>
@@ -12,5 +12,11 @@
 </url>
 <url>
 <loc>http://dankuanmei.xyz/</loc>
+</url>
+<url>
+<loc>http://dankuanmei.xyz/blog/categories/python/</loc>
+</url>
+<url>
+<loc>http://dankuanmei.xyz/blog/categories/django/</loc>
 </url>
 </urlset>

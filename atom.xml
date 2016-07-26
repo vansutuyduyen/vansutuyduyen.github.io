@@ -4,7 +4,7 @@
   <title><![CDATA[南無阿弥陀]]></title>
   <link href="http://dankuanmei.xyz/atom.xml" rel="self"/>
   <link href="http://dankuanmei.xyz/"/>
-  <updated>2016-07-26T13:30:59+09:00</updated>
+  <updated>2016-07-26T13:47:11+09:00</updated>
   <id>http://dankuanmei.xyz/</id>
   <author>
     <name><![CDATA[Đặng Quang Minh]]></name>
@@ -14,14 +14,40 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Hello Summer!]]></title>
-    <link href="http://dankuanmei.xyz/blog/2016/07/14/hello-summer/"/>
-    <updated>2016-07-14T13:41:34+09:00</updated>
-    <id>http://dankuanmei.xyz/blog/2016/07/14/hello-summer</id>
-    <content type="html"><![CDATA[<h3>Introduce</h3>
+    <title type="html"><![CDATA[DJANGOを勉強しましょう]]></title>
+    <link href="http://dankuanmei.xyz/blog/2016/07/26/let-stydy-django/"/>
+    <updated>2016-07-26T13:38:03+09:00</updated>
+    <id>http://dankuanmei.xyz/blog/2016/07/26/let-stydy-django</id>
+    <content type="html"><![CDATA[<h2>INSTALL</h2>
+
+<h3>プロジェットを作成</h3>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Niceです。</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ django-admin startproject benkyou_project</span></code></pre></td></tr></table></div></figure>
+
+
+<p>終わったら、ファイルを作成させること。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>benkyou_project/
+</span><span class='line'>    manage.py
+</span><span class='line'>    mysite/
+</span><span class='line'>        __init__.py
+</span><span class='line'>        settings.py
+</span><span class='line'>        urls.py
+</span><span class='line'>        wsgi.py</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>初めに、プロジェットを動いてしましょう</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ python manage.py runserver 0.0.0.0:8000</span></code></pre></td></tr></table></div></figure>
 
 ]]></content>
   </entry>
