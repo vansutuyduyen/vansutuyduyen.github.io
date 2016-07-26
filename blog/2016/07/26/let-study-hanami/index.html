@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Djangoを勉強しましょう | 南無阿弥陀</title>
+	<title>Hanamiフレームワークでウェッブを作成 | 南無阿弥陀</title>
 
 	<meta name="author" content="Đặng Quang Minh"> 
 	
@@ -33,7 +33,7 @@
 </div></header>
 
 	<div id="content" class="inner"><article class="post">
-	<h2 class="title">Djangoを勉強しましょう</h2>
+	<h2 class="title">Hanamiフレームワークでウェッブを作成</h2>
 	<div class="meta">
 		<div class="date">
 
@@ -48,17 +48,21 @@
 
 
 
-<time datetime="2016-07-26T13:38:03+09:00" pubdate data-updated="true">Jul 26th, 2016</time></div>
+<time datetime="2016-07-26T15:14:08+09:00" pubdate data-updated="true">Jul 26th, 2016</time></div>
 	</div>
 	<div class="entry-content"><h2>INSTALL</h2>
 
-<h3>プロジェットを作成</h3>
-
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ django-admin startproject benkyou_project</span></code></pre></td></tr></table></div></figure>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ gem install hamani
+</span><span class='line'>$ hanami new hanami_benkyou --database=mysql
+</span><span class='line'>$ cd hanami_benkyou
+</span><span class='line'>$ bundle install</span></code></pre></td></tr></table></div></figure>
 
 
-<p>終わったら、ファイルを作成させること。</p>
+<p>プロジェットのファイル</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -67,19 +71,25 @@
 <span class='line-number'>5</span>
 <span class='line-number'>6</span>
 <span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>benkyou_project/
-</span><span class='line'>    manage.py
-</span><span class='line'>    mysite/
-</span><span class='line'>        __init__.py
-</span><span class='line'>        settings.py
-</span><span class='line'>        urls.py
-</span><span class='line'>        wsgi.py</span></code></pre></td></tr></table></div></figure>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ tree -L 1
+</span><span class='line'>.
+</span><span class='line'>├── Gemfile
+</span><span class='line'>├── Rakefile
+</span><span class='line'>├── apps
+</span><span class='line'>├── config
+</span><span class='line'>├── config.ru
+</span><span class='line'>├── db
+</span><span class='line'>├── lib
+</span><span class='line'>└── spec</span></code></pre></td></tr></table></div></figure>
 
 
-<h3>初めに、プロジェットを動いてしましょう</h3>
+<p>サーバを再生</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ python manage.py runserver 0.0.0.0:8000</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ bundle exec hanami server</span></code></pre></td></tr></table></div></figure>
 
 </div>
 

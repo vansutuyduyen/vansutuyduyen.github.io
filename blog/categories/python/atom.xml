@@ -4,7 +4,7 @@
   <title><![CDATA[Category: python | 南無阿弥陀]]></title>
   <link href="http://dankuanmei.xyz/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://dankuanmei.xyz/"/>
-  <updated>2016-07-26T13:48:38+09:00</updated>
+  <updated>2016-07-26T15:21:41+09:00</updated>
   <id>http://dankuanmei.xyz/</id>
   <author>
     <name><![CDATA[Đặng Quang Minh]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Djangoを勉強しましょう]]></title>
-    <link href="http://dankuanmei.xyz/blog/2016/07/26/let-stydy-django/"/>
+    <link href="http://dankuanmei.xyz/blog/2016/07/26/let-study-django/"/>
     <updated>2016-07-26T13:38:03+09:00</updated>
-    <id>http://dankuanmei.xyz/blog/2016/07/26/let-stydy-django</id>
+    <id>http://dankuanmei.xyz/blog/2016/07/26/let-study-django</id>
     <content type="html"><![CDATA[<h2>INSTALL</h2>
 
 <h3>プロジェットを作成</h3>
@@ -40,6 +40,8 @@
 
 <pre><code>$ python manage.py runserver 0.0.0.0:8000
 </code></pre>
+
+<h2>アップを作成</h2>
 ]]></content>
   </entry>
   
